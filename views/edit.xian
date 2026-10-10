@@ -1,0 +1,9 @@
+
+<form method="POST" action="/employees/{{employee.id}}/update">
+    <input type="text" name="FirstName" placeholder="FirstName" value="{{employee.FirstName}}" required>
+    <input type="text" name="LastName" placeholder="LastName" value="{{employee.LastName}}" required>
+    <input type="text" name="Position" placeholder="Position" value="{{employee.Position}}" required>
+    <input type="text" name="Department" placeholder="Department" value="{{employee.Department}}" required>
+    <input type="type" name="Salary" placeholder="Salary" value="{{employee.Salary}}" required>
+    <input type="submit">
+</form>

@@ -1,0 +1,32 @@
+
+<form method="POST" action="/employees">
+    <input type="text" name="FirstName" placeholder="FirstName">
+    <input type="text" name="LastName" placeholder="LastName">
+    <input type="text" name="Position" placeholder="Position">
+    <input type="text" name="Department" placeholder="Department">
+    <input type="text" name="Salary" placeholder="Salary">
+    <input type="submit">
+</form>
+<table>
+    <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Position</th>
+        <th>Department</th>
+        <th>Salary</th>
+        <th>action</th>
+    </tr>
+    {{#each employees}}
+    <tr>
+        <td>{{FirstName}}</td>
+        <td>{{LastName}}</td>
+        <td>{{Position}}</td>
+        <td>{{Department}}</td>
+        <td>{{Salary}}</td>
+        <td>
+            <a href="/employees/{{id}}/edit">Edit</a>
+            <a href="/employees/{{id}}/delete">Delete</a>
+        </td>
+    </tr>
+    {{/each}}
+</table>
